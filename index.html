@@ -17,6 +17,7 @@
 </head>
 
 <body onclick>
+    <div class="background-image" id="bg"></div>
     <h1>P<span class="name">etr</span><span class="name_fa">ST</span><span class="name">řelák —</span><span
             class="name_fa">zvuk</span><span class="name">ař</span></h1>
     <div class="situation">
@@ -47,4 +48,14 @@
             <img src="img/m.png" alt="mail" id="contact__mail">
         </div>
     </div>
+
+  <script async>
+    document.addEventListener("DOMContentLoaded", function() {
+      const bgImg = new Image();
+      bgImg.src = "img/background.webp";
+      bgImg.onload = function() {
+        document.getElementById("bg").style.backgroundImage = "url('img/background.webp')";
+      };
+    });
+  </script>
 </body>
