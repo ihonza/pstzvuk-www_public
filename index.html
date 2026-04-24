@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="cs-CZ" id="all">
+<html lang="cs-CZ">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Ozvučení, osvětlení a projekce pro vaše koncerty, festivaly, divadelní představení a další kulturní akce. Přerov, Olomouc, Ostrava, Kroměříž, Zlín a další.">
     <meta name=keywords content="zvuk, světlo, zvukař, ozvučení, osvětlení, Olomouc, Přerov, Petr Střelák">
-    <meta name="description" content="Ozvučení, osvětlení a projekce v Olomouci a okolí."/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
@@ -17,41 +16,43 @@
     <title>PSTzvuk</title>
 </head>
 
-<body onclick>
-    <div class="background-image" id="bg"></div>
-    <h1>P<span class="name">etr</span><span class="name_fa">ST</span><span class="name">řelák —</span><span
-            class="name_fa">zvuk</span><span class="name">ař</span></h1>
-    <div class="wwd">
-        <span class="zvuk">
-            Zvučíme!
-        </span>
-        <span class="svetlo">
-            Svítíme!
-        </span>
-        <span class="projection">
-            Promítáme!
-        </span>
-        <div class="background_zvuk"></div>
-        <div class="background_svetlo"></div>
-        <div class="background_projection">
-	</div>
-    </div>
-    <hr>
-    <div class="contact">
-        <span>Chcete vědět víc?</span>
-        <div class="contact__methods">
-            <img src="img/p.png" alt="tel" class="contact__tel">
-            <img src="img/m.png" alt="mail" id="contact__mail">
-        </div>
-    </div>
+<body class="animate-in">
+    <div id="bg-kontakt" class="background-layer active bg-kontakt"></div>
+    <div id="bg-zvuk" class="background-layer bg-zvuk"></div>
+    <div id="bg-svetlo" class="background-layer bg-svetlo"></div>
+    <div id="bg-projekce" class="background-layer bg-projekce"></div>
+    <div id="bg-foto" class="background-layer bg-foto"></div>
 
-  <script async>
-    document.addEventListener("DOMContentLoaded", function() {
-      const bgImg = new Image();
-      bgImg.src = "img/background.webp";
-      bgImg.onload = function() {
-        document.getElementById("bg").style.backgroundImage = "url('img/background.webp')";
-      };
-    });
-  </script>
+    <header>
+        <h1>P<span class="name">etr</span><span class="name_fa">ST</span><span class="name">řelák –</span><span
+                class="name_fa">zvuk</span><span class="name">ař</span></h1>
+        <nav>
+            <a href="#kontakt" class="nav-link" data-page="kontakt">O nás</a>
+            <a href="#zvuk" class="nav-link" data-page="zvuk">Zvuk</a>
+            <a href="#svetlo" class="nav-link" data-page="svetlo">Světlo</a>
+            <a href="#projekce" class="nav-link" data-page="projekce">Projekce</a>
+            <a href="#foto" class="nav-link" data-page="foto">Fotky</a>
+
+        </nav>
+    </header>
+
+    <hr>
+
+    <main id="content"></main>
+
+    <script src="router.js"></script>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-arrow prev">&#10094;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <img class="lightbox-content" id="lightbox-img-back" style="display: none;">
+        <span class="lightbox-arrow next">&#10095;</span>
+    </div>
+    </div>
+    </div>
 </body>
+<footer>
+    <p>Web by <a href="https://ihonza.cz" target="_blank" style="cursor: pointer;">iHonza.cz</a>  &copy; 2026</p>
+</footer>
+</html>
