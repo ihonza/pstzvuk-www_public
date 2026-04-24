@@ -822,6 +822,9 @@ nav a {
         margin-top: 8vh !important;
     }
 
+    .contact__mail{
+        width: 20em;
+    }
 
 }
 
