@@ -211,11 +211,17 @@ nav a {
 .contact__methods img {
     display: block;
     height: auto;
-    width: 22vw;
-    max-width: 450px;
-    min-width: 250px;
+
     object-fit: contain;
     transition: transform 0.3s ease;
+}
+
+.contact__tel{
+    width: 22vw;
+}
+
+.contact__mail{
+    width: 32vw;
 }
 
 .content-section p.contact-alt {
