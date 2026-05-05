@@ -35,11 +35,6 @@ hr {
     opacity: 1;
 }
 
-span {
-    color: #FAFAFA;
-    font-size: 3em;
-    margin: 0;
-}
 
 a {
     color: #FAFAFA;
@@ -98,6 +93,9 @@ h1 span {
     transition: inherit;
     color: inherit;
     font-size: inherit;
+    color: #FAFAFA;
+    font-size: inherit;
+    margin: 0;
 }
 
 h1:hover {
@@ -787,10 +785,6 @@ nav a {
         visibility: visible;
     }
 
-    span {
-        font-size: 2.5em
-    }
-
     h1 {
         font-size: 3em;
     }
@@ -838,10 +832,6 @@ nav a {
 
     .animate-in h1 {
         font-size: 2.2em !important;
-    }
-
-    span {
-        font-size: 2em
     }
 
     nav {
@@ -924,10 +914,6 @@ nav a {
 
 
 @media (max-width: 480px) {
-
-    span {
-        font-size: 1.5em
-    }
 
     h1:hover {
         font-size: 2em;
