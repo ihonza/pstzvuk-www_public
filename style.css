@@ -750,6 +750,10 @@ nav a {
     animation-delay: 2s;
 }
 
+.animate-in .content-section p:nth-child(4) {
+    animation-delay: 2.2s;
+}
+
 .animate-in .name_fa:nth-child(2) {
     animation: name_fa_nth-child_2 5s;
     animation-delay: 0.5s;
