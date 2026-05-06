@@ -96,3 +96,7 @@ function loadGalleryScript() {
     script.defer = true;
     document.body.appendChild(script);
 }
+
+function tel(e) {e.href = 'tel:' + e.innerText.split('').reverse().join('').replace(/\s/g, '');}
+
+function mail(e) {e.href = 'mailto:Petr%20Střelák<' + e.innerText.split('').reverse().join('').replace(/\s/g, '').toLowerCase() + '>';}

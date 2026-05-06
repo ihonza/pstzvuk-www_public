@@ -233,12 +233,20 @@ nav a {
 .contact{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.3);
 }
-.contact_teleon{
+.contact_tel {
     font-size: 5em;
+    font-weight: bold;
 }
-.contact_email {
-    font-size: 3em;
+.contact_mail {
+    font-size: 4em;
+    font-weight: bold;
 }   
+
+.rev {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: inline-block;
+}
 
 
 
@@ -809,10 +817,10 @@ nav a {
         padding: 0.2em 0.4em !important;
         min-width: auto !important;
     }
-    .contact_telefon{
+    .contact_tel{
         font-size: 2.5em;
     }
-    .contact_email {
+    .contact_mail {
         font-size: 2em;
     }  
 
