@@ -236,10 +236,16 @@ nav a {
 .contact_tel {
     font-size: 4em;
     font-weight: bold;
+    opacity: 0;
+    animation: fadeIn linear 1s forwards;
+    animation-delay: 1.2s;
 }
 .contact_mail {
     font-size: 3.5em;
     font-weight: bold;
+    opacity: 0;
+    animation: fadeIn linear 1s forwards;
+    animation-delay: 1.4s;
 }   
 
 .rev {
